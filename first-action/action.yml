@@ -8,3 +8,5 @@ inputs:
   Project:
     description: Project Name
     required: true
+    default: "default-value-project-name"
+
