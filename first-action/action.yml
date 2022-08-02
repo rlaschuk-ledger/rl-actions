@@ -2,7 +2,11 @@ name: first-action
 description: Here is first-action code
 
 runs:
-  echo "first-action in main branch ..."
+  using: "composite"
+  steps:
+    - id: random-number-generator
+      run: echo "::set-output name=random-id::$(echo $RANDOM)"
+      shell: bash
 
 inputs:
   Project:
