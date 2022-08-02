@@ -2,7 +2,7 @@ name: first-action
 description: Here is first-action code
 
 runs:
-  echo "It's first-action in main branch ..."
+  echo "first-action in main branch ..."
 
 inputs:
   Project:
